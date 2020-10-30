@@ -1,0 +1,153 @@
+/*.grid {
+	display: grid;
+	grid-template-areas:
+    'header1 header1 header1 header1 header1 header1'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+     grid-gap: 10px;
+     background-color: #2196F3;
+     padding: 10px;
+}
+.grid {
+	background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}*/
+
+
+.header h1 {
+	color:black;
+	height: 20%;
+	background: url(http://www.csszengarden.com/214/huntington.jpg);
+
+	text-align: center;
+	font-size: 60px;
+	line-height: 200%;
+}
+.header {
+	font-family: Arial;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+.nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	border: 1px solid grey;
+	height:60%;
+	width: 20%;
+
+	float: left;
+}
+.nav li a {
+	display: block;
+	color: blue;
+	padding: 8px 16px;
+	text-decoration: none;
+}
+.nav li a:hover {
+	background-color: grey;
+	color: black;
+}
+.content {
+	/*border: 1px solid black;
+	bottom: 200px;
+	left: 500px;
+	position: absolute;*/
+	text-align: center;
+}
+.flexbox {
+	display: flex;
+		/*margin: 0 auto;
+    max-width: 1040px;
+    padding: 20px;*/
+}
+.flexboxes {
+	background: mediumseagreen;
+	border: 1px solid seagreen;
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	padding: 10px;
+}
+.main-flexbox {
+	flex: 2;
+}
+
+
+
+/*.flexbox {
+	border: 1px solid black;
+	bottom: 200px;
+	left: 500px;
+	position: absolute;
+	display: flex;
+	flex-wrap: nowrap;
+	background-color: dodgerblue;
+}
+.flexbox p {
+	width: 100px;
+	margin: 10px;
+	text-align: center;
+	line-height: 75px;
+	font-size:;
+	background-color: white;
+}*/
+
+/*.content h2 {
+	z-index: 11;
+	position: absolute;
+}*/
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	text-align: center;
+
+	width: 100%;
+	border: 9px solid gray;
+	background-color: gray;
+	color: white;
+	z-index: 10;
+}
+.footer p {
+	float: left;
+	width: 25%;
+}
+
+
+
+/*.article {
+	background: white;
+	border: 5px solid seagreen;
+	color: #666;
+	flex: 1;
+	margin: 10px;
+	flex-direction: column;
+    flex-basis: auto;
+	padding: 40px;
+}*/
+
+
+.article img  {
+	align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.article {
+  display: flex;
+  flex-direction: column;
+  flex-basis: auto; /* sets initial element size based on its contents  */
+}
+ 
+.article-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+ 
+.article-content {
+  flex: 1; /* This will make the content fill up the remaining space, and thus push the information bar at the bottom */
+}
